@@ -10,9 +10,9 @@ import matplotlib.pyplot as plt
 import sklearn
 import sklearn.datasets
 import sklearn.linear_model
-from simple_neural_network.planar_utils import plot_decision_boundary
-from simple_neural_network.NN_model import nn_model
-from simple_neural_network.NN_function import forward_propagation
+from planar_utils import plot_decision_boundary
+from NN_model import nn_model
+from NN_function import forward_propagation
 
 
 def predict(parameters, X):
