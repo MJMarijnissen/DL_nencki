@@ -5,7 +5,7 @@ Created on Sat Jun  8 12:00:25 2019
 @author: Wladek
 """
 import numpy as np
-from simple_neural_network.planar_utils import sigmoid
+from planar_utils import sigmoid
 
 
 def layer_sizes(X, Y):

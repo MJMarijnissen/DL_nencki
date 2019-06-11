@@ -5,7 +5,7 @@ Created on Sat Jun  8 12:05:29 2019
 @author: Wladek
 """
 import numpy as np
-from simple_neural_network.NN_function import initialize_parameters, forward_propagation, compute_cost, backward_propagation, \
+from NN_function import initialize_parameters, forward_propagation, compute_cost, backward_propagation, \
     update_parameters
 
 
