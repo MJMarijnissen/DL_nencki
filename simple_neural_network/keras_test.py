@@ -18,4 +18,6 @@ x_test.reshape(60000, 28*28)
 x_train /= 255
 x_test /= 255
 
-keras.utils.to_categorical(y_train, 10)
+y_train = keras.utils.to_categorical(y_train, 10) #encoding hot-shot
+y_test = keras.utils.to_categorical(y_train, 10) #encoding hot-shot
+
