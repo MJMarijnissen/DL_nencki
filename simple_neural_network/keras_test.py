@@ -29,4 +29,16 @@ model.add(Dropout(0.2))
 model.add(Dense(10, activation='softmax'))
 model.summary()
 
-model.compile(loss = 'categorical_crossentropy', optimizer='sqd', metrics=['accuracy'])
+model.compile(loss = 'categorical_crossentropy', 
+              optimizer='sqd', 
+              metrics=['accuracy']
+              )
+
+model.fit(x_train, y_train, 
+          batch_size=32, 
+          epochs = 128, 
+          verbose=True, # verbose = get info back
+          validation_data = (x_test,y_test)
+          ) 
+
+model.evaluate()
