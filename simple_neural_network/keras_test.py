@@ -29,4 +29,4 @@ model.add(Dropout(0.2))
 model.add(Dense(10, activation='softmax'))
 model.summary()
 
-model.compile()
+model.compile(loss = 'categorical_crossentropy', optimizer='sqd', metrics=['accuracy'])
