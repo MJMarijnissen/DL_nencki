@@ -8,3 +8,4 @@ Created on Tue Jun 11 14:43:49 2019
 import keras 
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
+
