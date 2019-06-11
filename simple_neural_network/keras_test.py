@@ -23,5 +23,10 @@ y_test = keras.utils.to_categorical(y_train, 10) #encoding hot-shot
 
 model = Sequential()
 model.add(Dense(512, activation="relu", input_shape=(28*28,)))
+model.add(Dropout(0.2)) #20% szansa na wylaczenie losowego neurona
+model.add(Dense(128, activation="relu")
 model.add(Dropout(0.2))
-model.add(Dense(512, activation="relu", input_shape=(28*28,)))
+model.add(Dense(10, activation='softmax'))
+model.summary()
+
+model.compile()
