@@ -32,3 +32,11 @@ model.add(Flatten())
 model.add(Dense(128, activation='relu'))
 model.add(Dropout(0.5))
 model.add(Dense(10, activation='softmax'))
+
+model.compile(loss='categorical_crossentropy', optimizer='adadelta', metrics=['accuracy'])
+
+model.fit(x_train, y_train, batch_size=32, epochs=20, verbose=True, validation_data=(x_test, y_test))
+
+score = model.evaluate(x_test, y_test, verbose=False)
+
+print(score)
